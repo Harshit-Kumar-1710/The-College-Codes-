@@ -1,20 +1,14 @@
 #include<stdio.h>
-void oddandeven(int);
-void main()
+int main()
+{int i,n;
+char stri[70];
+printf("Enter the Size of the String\n");
+scanf("%d",&n);
+for(i=0;i<n;i++)
 {
-    int n;
-    printf("Enter a Number\n");
-    scanf("%d",&n);
-    oddandeven(n);
+    scanf("%s",&stri[i]);
 }
-void oddandeven(int num)
-{
-    if(num%2==0)
-    {
-        printf("The Number is Even");
-    }
-    else
-    {
-        printf("The Number is Odd");
-    }
+stri[i]='\0';
+printf("The String is %s",stri);
+return 0;
 }
