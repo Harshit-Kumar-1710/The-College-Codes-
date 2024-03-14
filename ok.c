@@ -1,14 +1,21 @@
 #include<stdio.h>
+#include<string.h>
 int main()
-{int i,n;
-char stri[70];
-printf("Enter the Size of the String\n");
-scanf("%d",&n);
-for(i=0;i<n;i++)
+{char a[90],b[80];
+int l,i=0;
+printf("Enter the First String\n");
+fgets(a,90,stdin);
+printf("Enter the Second String\n");
+fgets(b,90,stdin);
+l=strlen(a);
+l-1;
+while(b[i]!='\0')
 {
-    scanf("%s",&stri[i]);
+    a[l]=b[i];
+    l++;
+    i++;
 }
-stri[i]='\0';
-printf("The String is %s",stri);
+a[l]='\0';
+printf("%s",a);
 return 0;
 }

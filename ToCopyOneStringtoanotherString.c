@@ -14,4 +14,4 @@ i=i-1;
 puts(b);
 printf("The No. of the Characters are :%d",i);
 return 0;
-}
+} 
